@@ -2,12 +2,32 @@
 
 
 .smallNavbar{
-    font-size: 7px;
+    font-size: 8px;
 }
 
 nav{
     img{
-        width: 50px;
+        width: 70px;
         aspect-ratio: 1/1;
+    }
+}
+
+.mainNav{
+    
+    ul{
+        li{
+            list-style: none;
+            font-weight: 500;
+            font-size: 14px;
+            // &:hover{
+            //     color:;
+            // }
+        }
+    }
+}
+
+.searchBar{
+    p{
+        font-size: 14px;
     }
 }
