@@ -38,3 +38,50 @@ nav{
    background-position: top;
    background-size: cover;
 }
+
+
+.bigFooter{
+    background-image: url("../imgs/footer-bg.jpg");
+    
+    overflow: hidden;
+   background-size: cover;
+
+   .leftSide{
+    
+        p{
+            color: grey;
+            font-size: 12px;
+        }
+        ul{
+            padding-left: 0px;
+
+            li{
+                list-style: none;
+                color: grey;
+                font-size: 12px;
+            }
+        }
+        .titleFooter{
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+   }
+
+   .rightSide{
+    margin-top: -110px;
+    margin-bottom: -300px;
+    width: 650px;
+    aspect-ratio: 1/1; 
+   }
+
+}
+.smallFooter{
+ background-color: #303030;
+    .logoSocial{
+        img{
+            width: 30px;
+            aspect-ratio: 1/1;
+        }
+
+    }
+}
