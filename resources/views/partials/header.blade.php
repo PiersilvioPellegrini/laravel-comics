@@ -10,7 +10,7 @@
     <div class="container">
         <nav class="d-flex justify-content-between align-items-center pt-3 pb-3">
             <div class="logo ">
-                <img src="{{ Vite::asset('resources/imgs/dc-logo.png') }}" alt="">
+               <a href="{{route('index')}}"><img src="{{ Vite::asset('resources/imgs/dc-logo.png') }}" alt=""></a> 
             </div>
             <div class="mainNav pt-3">
                 <ul class="d-flex justify-content-between gap-4 align-items-center">

@@ -21,10 +21,12 @@ Route::get('/comics', function(){
 
     // assegno ad una variabile i dati del data base comics da utilizzare in questa pagina 
     $comics = config('dbComics');
+    $bluefooter =config('itemsBlueFooter');
 
 
 
     return view("comics.comics", [
-        "Commics" => $comics
+        "Comics" => $comics,
+        "ItemsList" => $bluefooter
     ]);
 })->name('comics');

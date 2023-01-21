@@ -43,6 +43,7 @@ nav {
     height: 400px;
     background-position: top;
     background-size: cover;
+    
 }
 
 
@@ -100,43 +101,68 @@ nav {
 // COMICS CONTENT
 
 .container {
-
+    
     .titleComics {
         color: white;
         width: 250px;
         padding: 10px 0;
         margin-bottom: 30px;
+        
 
         h4 {
             font-weight: 700;
+            font-size: 20px;
         }
     }
 
-    .cardComics {
+}
+
+
+.loadMore {
+    margin-top: 50px;
+
+    button {
+
+        color: white;
+        border: 0px;
+        font-weight: 600;
+        padding: 10px 50px;
+        font-size: 12px;
+
+    }
+}
+
+.blueFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+    .elements {
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
-        padding: 10px 20px;
-
-
-        .singleComic {
-
-            .imageComic {
-                margin-bottom: 30px;
-
-                img {
-                    aspect-ratio: 1/1;
-                    width: 160px;
-                    background-image: cover;
-                }
-
-            }
-
-            .titleComic {
-                color: white;
-            }
-
-        }
+        gap: 80px;
     }
 
+    .singleElement {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+        .imageElement{
+            img{
+                width: 40px;
+                
+            }
+        }
+
+        .textElement {
+            font-size: 14px;
+            color: white;
+        }
+    }
+}
+
+.marginNegativo{
+    margin-top: -30px;
 }
