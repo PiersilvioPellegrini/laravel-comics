@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 })->name("index");
+
+Route::get('/comics', function(){
+
+    // assegno ad una variabile i dati del data base comics da utilizzare in questa pagina 
+    $comics = config('dbComics');
+
+
+
+    return view("comics.comics", [
+        "Commics" => $comics
+    ]);
+})->name('comics');

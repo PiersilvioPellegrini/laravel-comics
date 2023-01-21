@@ -1,21 +1,27 @@
 @import '~bootstrap/scss/bootstrap';
 
+a {
+    text-decoration: none;
+    color: #303030;
+}
 
-.smallNavbar{
+
+
+.smallNavbar {
     font-size: 8px;
 }
 
-nav{
-    img{
+nav {
+    img {
         width: 70px;
         aspect-ratio: 1/1;
     }
 }
 
-.mainNav{
-    
-    ul{
-        li{
+.mainNav {
+
+    ul {
+        li {
             list-style: none;
             font-weight: 500;
             font-size: 14px;
@@ -26,62 +32,111 @@ nav{
     }
 }
 
-.searchBar{
-    p{
+.searchBar {
+    p {
         font-size: 14px;
     }
 }
 
-.jumbotron{
-   background-image: url("../imgs/jumbotron.jpg");
-   height: 400px;
-   background-position: top;
-   background-size: cover;
+.jumbotron {
+    background-image: url("../imgs/jumbotron.jpg");
+    height: 400px;
+    background-position: top;
+    background-size: cover;
 }
 
 
-.bigFooter{
+.bigFooter {
     background-image: url("../imgs/footer-bg.jpg");
-    
-    overflow: hidden;
-   background-size: cover;
 
-   .leftSide{
-    
-        p{
+    overflow: hidden;
+    background-size: cover;
+
+    .leftSide {
+
+        p {
             color: grey;
             font-size: 12px;
         }
-        ul{
+
+        ul {
             padding-left: 0px;
 
-            li{
+            li {
                 list-style: none;
                 color: grey;
                 font-size: 12px;
             }
         }
-        .titleFooter{
+
+        .titleFooter {
             font-weight: 600;
             padding-bottom: 10px;
         }
-   }
+    }
 
-   .rightSide{
-    margin-top: -110px;
-    margin-bottom: -300px;
-    width: 650px;
-    aspect-ratio: 1/1; 
-   }
+    .rightSide {
+        margin-top: -110px;
+        margin-bottom: -300px;
+        width: 650px;
+        aspect-ratio: 1/1;
+    }
 
 }
-.smallFooter{
- background-color: #303030;
-    .logoSocial{
-        img{
+
+.smallFooter {
+    background-color: #303030;
+
+    .logoSocial {
+        img {
             width: 30px;
             aspect-ratio: 1/1;
         }
 
     }
+}
+
+
+// COMICS CONTENT
+
+.container {
+
+    .titleComics {
+        color: white;
+        width: 250px;
+        padding: 10px 0;
+        margin-bottom: 30px;
+
+        h4 {
+            font-weight: 700;
+        }
+    }
+
+    .cardComics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 10px 20px;
+
+
+        .singleComic {
+
+            .imageComic {
+                margin-bottom: 30px;
+
+                img {
+                    aspect-ratio: 1/1;
+                    width: 160px;
+                    background-image: cover;
+                }
+
+            }
+
+            .titleComic {
+                color: white;
+            }
+
+        }
+    }
+
 }
